@@ -43,7 +43,7 @@ model EventType {
   date       Int
   start_time Int
   end_time   Int?
-  location   String?
+  location   Json?
   venue_name String?
   user_id    Int?
   User       User?      @relation(fields: [user_id], references: [id])
