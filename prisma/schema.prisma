@@ -40,7 +40,8 @@ model Partner {
 model EventType {
   id         Int        @id @default(autoincrement())
   type       EVENT_TYPE
-  start_time Int?
+  date       Int
+  start_time Int
   end_time   Int?
   location   String?
   venue_name String?
